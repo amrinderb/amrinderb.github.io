@@ -1,0 +1,1213 @@
+
+
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+
+
+
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<!-- 	<meta name="author" content="SemiColonWeb" /> -->
+
+	<!-- Stylesheets
+	============================================= -->
+	<link href="https://fonts.googleapis.com/css?family=Lora:400,400i|Roboto:300,400,500,700|Rubik:400,600" rel="stylesheet">
+	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	<link rel="stylesheet" href="css/dark.css" type="text/css" />
+
+	<!-- Real Estate Demo Specific Stylesheet -->
+	<link rel="stylesheet" href="demos/real-estate/real-estate.css" type="text/css" />
+	<link rel="stylesheet" href="demos/real-estate/css/font-icons.css" type="text/css" />
+	<!-- / -->
+
+	<link rel="stylesheet" href="css/font-icons.css" type="text/css" />
+	<link rel="stylesheet" href="css/animate.css" type="text/css" />
+	<link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
+
+	<link rel="stylesheet" href="demos/real-estate/fonts.css" type="text/css" />
+
+	<!-- Bootstrap Select CSS -->
+	<link rel="stylesheet" href="css/components/bs-select.css" type="text/css" />
+
+	<!-- Bootstrap Switch CSS -->
+	<link rel="stylesheet" href="css/components/bs-switches.css" type="text/css" />
+
+	<!-- Range Slider CSS -->
+	<link rel="stylesheet" href="css/components/ion.rangeslider.css" type="text/css" />
+
+	<link rel="stylesheet" href="css/responsive.css" type="text/css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<!--[if lt IE 9]>
+		<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+	<![endif]-->
+
+	<link rel="stylesheet" href="css/colors.php.css" type="text/css" />
+
+	<style>
+
+		@media (min-width: 768px) {
+			.property-photo { height:249px; }
+
+			.real-estate-item-desc span {
+				height:110px;
+			}
+		}
+
+		@media (max-width: 991px) {
+			#top-bar { display:none; }
+		}
+
+		@media (max-width: 699px) {
+			.team.team-list .team-image {
+				float: none;
+			    margin-left: auto;
+			    margin-right: auto;
+			}
+
+			.team.team-list .team-title {
+				text-align: center;
+			}
+
+/*			.team-content p:last-child {
+			    padding-left: 30px;
+			    padding-right: 30px;
+			}*/
+
+			#rlplogo1 {
+				width:200px;
+				margin-left:auto;
+				margin-right:auto;
+			}
+
+			#social-links {
+				width:115px;
+				margin-left:auto;
+				margin-right:auto;
+			}
+		}
+
+		#headquarters-map {
+			width:60%;
+			display:block;
+		}
+
+		#contact-info {
+			width:40%;
+		}
+
+		#contact-info-text {
+			font-size:15px;
+		}
+
+		@media (max-width: 767px) {
+
+			#headquarters-map {
+				display:none;
+			}
+
+			#contact-info {
+				width:100%;
+			}
+
+			#contact-info div {
+				width: 280px;
+			    margin-left: auto;
+			    margin-right: auto;
+			}
+
+/*			#search_properties { display: none; }*/
+
+/*			#primary-menu ul li:first-of-type { display: none; }
+
+			#primary-menu ul li:nth-of-type(2) { border-top: none; }*/
+
+/*			#about_dev { 
+				border-top: 3px solid #f0ad4e; 
+				background-color: rgb(229, 229, 229); 
+				padding-bottom: 30px;
+			}*/
+
+			.team { margin-top:-20px; }
+		}
+
+		@media (max-width: 991px) {
+			#slider { display:none; }
+ 			#searchtab { visibility: hidden; }
+
+		}
+
+		@media screen and (min-width: 699px) and (max-width: 991px) {
+			.team { 
+				width: 90%;
+			    margin-left: auto;
+			    margin-right: auto;
+			 }
+
+		}
+
+		@media (min-width: 991px) {
+			#mobile_house {display:none;}
+		}
+
+		html, body {
+		    max-width: 100%;
+		    overflow-x: hidden;
+		}
+	</style>
+
+	<!-- Document Title
+	============================================= -->
+	<title>Dev Brar - REALTOR®</title>
+
+</head>
+
+<body class="stretched side-push-panel">
+
+	<div id="side-panel">
+
+		<div id="side-panel-trigger-close" class="side-panel-trigger"><a href="#"><i class="icon-line-cross"></i></a></div>
+
+		<div class="side-panel-wrap">
+
+			<div class="widget clearfix">
+
+				<h4 class="t400">Login with Social Profiles</h4>
+
+				<a href="#" class="button button-rounded t400 btn-block center si-colored noleftmargin si-facebook">Facebook</a>
+				<a href="#" class="button button-rounded t400 btn-block center si-colored noleftmargin si-gplus">Google</a>
+
+				<div class="line"></div>
+
+				<h4 class="t400">Existing Account?</h4>
+
+<!-- 				<form id="login-form" name="login-form" class="nobottommargin" action="#" method="post">
+
+					<div class="col_full">
+						<label for="login-form-username" class="t400">Username:</label>
+						<input type="text" id="login-form-username" name="login-form-username" value="" class="form-control" />
+					</div>
+
+					<div class="col_full">
+						<label for="login-form-password" class="t400">Password:</label>
+						<input type="password" id="login-form-password" name="login-form-password" value="" class="form-control" />
+					</div>
+
+					<div class="col_full nobottommargin">
+						<button class="button button-rounded t400 nomargin" id="login-form-submit" name="login-form-submit" value="login">Login</button>
+						<a href="#" class="fright">Forgot Password?</a>
+					</div>
+
+				</form> -->
+
+
+			</div>
+
+		</div>
+
+	</div>
+
+	<!-- Document Wrapper
+	============================================= -->
+	<div id="wrapper" class="clearfix">
+
+		<!-- Top Bar
+		============================================= -->
+		<div id="top-bar" class="transparent-topbar">
+
+			<div class="container clearfix">
+
+				<div class="col_half nobottommargin clearfix">
+
+					<!-- Top Links
+					============================================= -->
+<!-- 					<div class="top-links">
+						<ul>
+							<li><a href="#">All Cities</a>
+								<ul>
+									<li><a href="#">New York</a></li>
+									<li><a href="#">Los Angeles</a></li>
+									<li><a href="#">California</a></li>
+									<li><a href="#">Miami</a></li>
+									<li><a href="#">Las Vegas</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div> --><!-- .top-links end -->
+
+				</div>
+
+				<div class="col_half fright col_last clearfix nobottommargin">
+
+					<!-- Top Links
+					============================================= -->
+					<div class="top-links">
+						<ul>
+							<li class="d-md-none d-lg-block"><a href="tel:9053341851"><i class="icon-call"></i> Direct: 905-334-1851</a></li>
+							<!-- <li><a href="#"><i class="icon-download-alt"></i> Download App</a></li>
+							<li class="top-bar-highlight"><a href="#">Sell/Rent your Property</a>
+								<div class="top-link-section" style="font-size: 14px;">
+									Genuine Clients, 100% Trust Assurance and Lowest Fees on the Market. <a href="#" class="more-link font-secondary" style="border-bottom-style: dotted;">Learn More &rarr;</a>
+								</div>
+							</li>
+							<li><a href="#" class="side-panel-trigger">Login/Register</a></li> -->
+						</ul>
+					</div><!-- .top-links end -->
+
+				</div>
+
+			</div>
+
+		</div><!-- #top-bar end -->
+
+		<!-- Header
+		============================================= -->
+		<header id="header" class="static-sticky transparent-header dark">
+
+			<div id="header-wrap">
+
+				<div class="container clearfix">
+
+					<div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+
+					<!-- Logo
+					============================================= -->
+					<div id="logo">
+						<a style="cursor: pointer;" data-dark-logo="demos/real-estate/images/logo@2x_new.png" class="standard-logo"><img src="demos/real-estate/images/logo@2x_new.png" alt="Canvas Logo"></a>
+						<a style="cursor: pointer;" data-dark-logo="demos/real-estate/images/logo@2x_new.png" class="retina-logo"><img src="demos/real-estate/images/logo@2x_new.png" alt="Canvas Logo"></a>
+					</div><!-- #logo end -->
+
+					<!-- Primary Navigation
+					============================================= -->
+					<nav id="primary-menu" class="with-arrows">
+
+						<ul>
+							<li><a data-scrollto="#about_dev" href="#"><div>About</div></a></li>
+							<!-- <li><a data-scrollto="#featured_listings" href="#"><div>Listings</div></a></li> -->
+							<li><a data-scrollto="#search_heading" href="#"><div>Search</div></a></li>
+							<li><a data-scrollto="#contact-info" href="#"><div>Contact</div></a></li>
+						</ul>
+
+					</nav><!-- #primary-menu end -->
+
+				</div>
+
+			</div>
+
+		</header><!-- #header end -->
+
+		<!-- Slider
+		============================================= -->
+		<section id="slider">
+
+
+
+			<div>
+				<img src="demos/real-estate/images/hero/house_wide.jpg" style="position:relative; top:-125px;">
+
+			<!-- 	<div class="fslider" data-speed="3000" data-pause="7500" data-animation="fade" data-arrows="false" data-pagi="false" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; background-color: #333; z-index: 1;">
+					<div class="flexslider" style="height: 100% !important;">
+						<div class="slider-wrap" style="height: inherit;">
+							<div class="slide" style="background: url('demos/real-estate/images/hero/4_cropped.jpg') center center; background-size: cover; height: 100% !important;"></div> -->
+							<!-- <div class="slide" style="background: url('demos/real-estate/images/hero/3.jpg') center center; background-size: cover; height: 100% !important;"></div> -->
+<!-- 						</div>
+					</div>
+				</div> -->
+<!-- 				<div class="vertical-middle" style="z-index: 3; margin-top:-50%">
+					<div class="container center clearfix">
+						<div class="emphasis-title nomargin">
+							<h1>Your Dream Home in Halton.</h1>
+							<span class="t300 uppercase" style="font-size: 18px; letter-spacing: 10px; color: rgba(255,255,255,0.9);">From a REALTOR® you can trust.</span>
+						</div>
+					</div>
+				</div> -->
+				<div class="video-wrap" style="position: absolute; top: 0; left: 0; height: 200px; z-index:1;">
+					<div class="video-overlay real-estate-video-overlay" style="z-index: 1;"></div>
+				</div>
+			</div>
+
+		</section><!-- #slider end -->
+
+		<div class="tabs advanced-real-estate-tabs clearfix">
+
+			<div class="container clearfix" id="searchtab">
+				<ul class="tab-nav clearfix">
+					<li><a href="#tab-properties" data-scrollto="#about_dev" data-offset="133">Find Your Dream Home in Halton</a></li>
+				</ul>
+			</div>
+
+			<div id="mobile_house">
+				<img src="demos/real-estate/images/hero/house_wide.jpg">
+				<div class="video-wrap" style="position: absolute; top: 42px; left: 0; height: 10%; z-index:1;">
+					<div class="video-overlay real-estate-video-overlay" style="z-index: 1;"></div>
+				</div>
+			</div>
+
+			<div class="tab-container">
+
+
+
+			<div class="row" id="about_dev">
+
+			<div class="col-lg-8 col-12" style="margin-left:auto; margin-right:auto; max-width:1170px;">
+
+				<div class="team team-list clearfix center">
+					<div class="team-image" style="max-width:100%;">
+						<img src="demos/real-estate/images/devbrar.png" alt="Dev Brar">
+					</div>
+					<div class="team-desc">
+						<div class="team-title"><h4>Dev Brar</h4><span>Real Estate Representative</span></div>
+						<div class="team-content">
+							<p style="text-align:justify">As a highly experienced investor in residential real estate, Dev Brar has developed a keen understanding of market trends in Burlington and the surrounding area. She has spent the past 15 years building, selling, and leasing over a dozen properties and has amassed a breadth of knowledge about each step of the process. First-time buyers and those looking to move are often faced with several  questions: is it a good time to sell in my area, and what should be my asking price? If I’m looking to buy, which type of home will increase in value substantially in the future? Dev Brar has the up-to-date knowledge and analysis required to help you make informed decisions on these important matters. Interested in leasing or renting as well? Contact Dev for all your residential real estate needs, backed by the full range of services provided by Royal LePage, a name you can trust.</p>
+
+						</div>
+						<div style="margin-top:30px;" id="rlplogo1">
+							<a href="http://www.royallepageburlington.ca/"><img src="demos/real-estate/images/royallepage.png" alt="Royal LePage" style="max-width:200px;"></a>
+						</div>
+
+						<div style="margin-top:20px;" id="social-links">
+							<a href="https://www.facebook.com/royallepage/" class="social-icon si-rounded si-small si-colored si-facebook">
+								<i class="icon-facebook"></i>
+								<i class="icon-facebook"></i>
+							</a>
+							<a href="https://twitter.com/Royal_LePage" class="social-icon si-rounded si-small si-colored si-twitter">
+								<i class="icon-twitter"></i>
+								<i class="icon-twitter"></i>
+							</a>
+							<a href="https://www.instagram.com/royal_lepage/" class="social-icon si-rounded si-small si-colored si-instagram">
+								<i class="icon-instagram"></i>
+								<i class="icon-instagram"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+
+		</div>
+
+<!-- 			<div class="container clearfix" id="searchtab2" style="margin-top:-50px; margin-bottom:20px;">
+				<ul class="tab-nav clearfix" style="margin-left: auto; margin-right: auto; width: 360px;">
+					<li ><a style="background-color:#f0ad4e;" href="#tab-properties" data-scrollto="#tab-properties" data-offset="133">Find Your Dream Home in Halton</a></li>
+				</ul>
+			</div>
+
+
+ -->
+
+			</div>
+
+
+
+		</div>
+
+
+
+		<!-- Content
+		============================================= -->
+		<section id="content">
+
+			<div class="content-wrap" style="padding-bottom:0;padding-top:40px;">
+
+				<div class="container clearfix">
+
+<!-- 					<div class="col_one_third">
+						<div class="feature-box fbox-plain">
+							<div class="fbox-icon">
+								<a href="#"><i class="icon-realestate-my-house"></i></a>
+							</div>
+							<h3 class="t400">Hassle Free</h3>
+							<p>Canvas provides support for Native HTML5 Videos that can be added to a Full Width Background.</p>
+						</div>
+					</div>
+
+					<div class="col_one_third">
+						<div class="feature-box fbox-plain">
+							<div class="fbox-icon">
+								<a href="#"><i class="icon-realestate-hammer"></i></a>
+							</div>
+							<h3 class="t400">Well Constructed</h3>
+							<p>Display your Content attractively using Parallax Sections that have unlimited customizable areas.</p>
+						</div>
+					</div>
+
+					<div class="col_one_third col_last">
+						<div class="feature-box fbox-plain">
+							<div class="fbox-icon">
+								<a href="#"><i class="icon-realestate-garage"></i></a>
+							</div>
+							<h3 class="t400">Free Utilites</h3>
+							<p>You have complete easy control on each &amp; every element that provides endless customization possibilities.</p>
+						</div>
+					</div>
+
+					<div class="clear"></div>
+
+					<div class="col_one_third">
+						<div class="feature-box fbox-plain">
+							<div class="fbox-icon">
+								<a href="#"><i class="icon-realestate-rent"></i></a>
+							</div>
+							<h3 class="t400">Flexible Rentals</h3>
+							<p>Canvas provides support for Native HTML5 Videos that can be added to a Full Width Background.</p>
+						</div>
+					</div>
+
+					<div class="col_one_third">
+						<div class="feature-box fbox-plain">
+							<div class="fbox-icon">
+								<a href="#"><i class="icon-realestate-credit"></i></a>
+							</div>
+							<h3 class="t400">Easy Financing</h3>
+							<p>Display your Content attractively using Parallax Sections that have unlimited customizable areas.</p>
+						</div>
+					</div>
+
+					<div class="col_one_third col_last">
+						<div class="feature-box fbox-plain">
+							<div class="fbox-icon">
+								<a href="#"><i class="icon-realestate-doc"></i></a>
+							</div>
+							<h3 class="t400">Solid Paperwork</h3>
+							<p>You have complete easy control on each &amp; every element that provides endless customization possibilities.</p>
+						</div>
+					</div> -->
+
+					<div class="clear"></div>
+		<!-- 			<div class="line topmargin-sm bottommargin-lg"></div> -->
+
+
+					
+
+					<div class="promo promo-dark promo-flat bottommargin-lg">
+						<h3 class="t400 ls1">Full-time REALTOR® Backed By a Full-Service Brokerage</h3>
+						<a href="#" data-scrollto="#contact-info" class="button button-dark button-large button-rounded">Contact Dev</a>
+					</div>
+
+
+					<div class="clearfix bottommargin">
+					<div class="heading-block nobottomborder" id="search_heading">
+							<h3>Search</h3>
+					</div>
+
+					<div class="tab-content clearfix" id="tab-properties">
+						<form onsubmit="searchSubmit();" class="nobottommargin">
+							<div class="row">
+								<div class="col-lg-2 col-md-12 bottommargin-sm">
+									<label for="" style="display:block;">Type</label>
+									<input id="rentBuySwitch" class="bt-switch" type="checkbox" checked data-on-text="Buy" data-off-text="Rent" data-on-color="themecolor" data-off-color="themecolor">
+								</div>
+								<div class="col-lg-3 col-md-6 col-12 bottommargin-sm">
+									<label for="">Choose Location</label>
+									<select id="locationSelect" class="selectpicker form-control" data-size="6" style="width:100%;">
+										<optgroup label="Ontario">
+											<option selected value="">Burlington</option>
+											<option value="">Oakville</option>
+											<option value="">Milton</option>
+											<option value="">Waterdown</option>
+										</optgroup>
+									</select>
+								</div>
+								<div class="col-lg-3 col-md-6 col-12 bottommargin-sm">
+									<label for="">Property Type</label>
+									<select id="propertySelect" class="selectpicker form-control" data-size="6" style="width:100%; line-height: 30px;">
+										<option value="Any">Any</option>
+										<optgroup label="Residential">
+											<option value="House">House</option>
+											<option value="Condo">Condo</option>
+										</optgroup>
+									</select>
+								</div>
+								<div class="col-lg-2 col-md-6 col-6 bottommargin-sm">
+									<label for="">Beds</label>
+									<select id="bedsSelect" class="selectpicker form-control" data-size="10" data-placeholder="Any" style="width:100%; line-height: 30px;">
+										<option value="1">1</option>
+										<option value="1+">1+</option>
+										<option value="2">2</option>
+										<option value="2+">2+</option>
+										<option value="3">3</option>
+										<option selected value="3+">3+</option>
+										<option value="4">4</option>
+										<option value="4+">4+</option>
+										<option value="5">5</option>
+										<option value="5+">5+</option>
+									</select>
+								</div>
+								<div class="col-lg-2 col-md-6 col-6 bottommargin-sm">
+									<label for="">Baths</label>
+									<select id="bathsSelect" class="selectpicker form-control" data-size="10" data-placeholder="Any" style="width:100%; line-height: 30px;">
+										<option value="1">1</option>
+										<option value="1+">1+</option>
+										<option value="2">2</option>
+										<option value="2+">2+</option>
+										<option value="3">3</option>
+										<option selected value="3+">3+</option>
+										<option value="4">4</option>
+										<option value="4+">4+</option>
+										<option value="5">5</option>
+										<option value="5+">5+</option>
+									</select>
+								</div>
+								<div class="w-100"></div>
+								<div class="col-lg-9 col-md-12 col-12">
+									<label for="" style="margin-bottom: 20px !important;">Price Range</label>
+									<input id="priceRange" class="price-range-slider" />
+								</div>
+								<div class="w-100 d-block d-md-none bottommargin-sm"></div>
+<!-- 								<div class="col-lg-4 offset-lg-1 col-md-6 col-12">
+									<label for="" style="margin-bottom: 20px !important;">Property Area</label>
+									<input class="area-range-slider" />
+								</div> -->
+								<div class="offset-lg-1 col-lg-2 col-md-12 clearfix">
+									<button class="button button-3d button-rounded btn-block nomargin" style="margin-top: 35px !important;">Search</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+
+					<div class="clear"></div>
+
+
+
+
+<!-- 					<div class="row real-estate-properties clearfix">
+
+						<div class="col-lg-7">
+							<a href="#" style="background: url('demos/real-estate/images/cities/4.jpg') no-repeat bottom center; background-size: cover;">
+								<div class="vertical-middle dark center">
+									<div class="heading-block nomargin noborder">
+										<h3 class="capitalize t500">California</h3>
+										<span style="margin-top: 5px; font-size: 17px;">23 Properties</span>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="col-lg-5">
+							<a href="#" style="background: url('demos/real-estate/images/cities/2.jpg') no-repeat center center; background-size: cover;">
+								<div class="vertical-middle dark center">
+									<div class="heading-block nomargin noborder">
+										<h3 class="capitalize t500">New York</h3>
+										<span style="margin-top: 5px; font-size: 17px;">12 Properties</span>
+									</div>
+								</div>
+							</a>
+						</div>
+
+						<div class="col-lg-4">
+							<a href="#" style="background: url('demos/real-estate/images/cities/3.jpg') no-repeat center center; background-size: cover;">
+								<div class="vertical-middle dark center">
+									<div class="heading-block nomargin noborder">
+										<h3 class="capitalize t500">San Francisco</h3>
+										<span style="margin-top: 5px; font-size: 17px;">8 Properties</span>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="col-lg-4">
+							<a href="#" style="background: url('demos/real-estate/images/cities/1.jpg') no-repeat center center; background-size: cover;">
+								<div class="vertical-middle dark center">
+									<div class="heading-block nomargin noborder">
+										<h3 class="capitalize t500">Texas</h3>
+										<span style="margin-top: 5px; font-size: 17px;">31 Properties</span>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="col-lg-4">
+							<a href="#" style="background: url('demos/real-estate/images/cities/5.jpg') no-repeat center center; background-size: cover;">
+								<div class="vertical-middle dark center">
+									<div class="heading-block nomargin noborder">
+										<h3 class="capitalize t500">New Orleans</h3>
+										<span style="margin-top: 5px; font-size: 17px;">19 Properties</span>
+									</div>
+								</div>
+							</a>
+						</div>
+
+					</div> -->
+
+				</div>
+
+				<div class="row norightmargin common-height" style="padding-top:50px;"> <!-- !important margin-top here doesn't work on iOS safari -->
+					<div id="headquarters-map" class="col-lg-8 gmap d-md-block"></div>
+					<div id="contact-info" class="col-lg-4" style="background-color: #E5E5E5;">
+						<div style="padding: 35px;">
+							<h4 class="font-body t600 ls1" style="margin-bottom:0px;">Dev Brar</h4>
+							<h5 class="font-body t600 ls1">Sales Representative</h5>
+
+							<div style="line-height: 1.7;" id="contact-info-text">
+								<address style="line-height: 1.7;">
+									Royal LePage Burloak<br>
+									Real Estate Services Brokerage<br>
+									3060 Mainway, Suite 200<br>
+									Burlington, Ontario, L7M 1A3<br><br>
+									<abbr title="Office Number"><strong>Office:&nbsp;</strong></abbr><a href="tel:9053353042">905-335-3042</a><br>
+									<abbr title="Fax Number"><strong>Fax:&nbsp;</strong></abbr><a href="tel:9053351659">905-335-1659</a><br>
+									<abbr title="Toll Free Number"><strong>Toll Free:&nbsp;</strong></abbr><a href="tel:18002900163">1-800-290-0163</a><br>
+									<abbr title="Dev Cell Number"><strong>Cell:&nbsp;</strong></abbr><a href="tel:9053341851">905-334-1851</a><br>
+									<abbr title="Email Address"><strong>Email:&nbsp;</strong></abbr><a href="mailto:devbrar@royallepage.ca">devbrar@royallepage.ca</a>
+								</address>
+
+								<div class="clear topmargin-sm"></div>
+
+								<div style="margin-top:20px;">
+									<a href="http://www.royallepageburlington.ca"><img src="demos/real-estate/images/royallepage.png" alt="Royal LePage" style="max-width:200px;"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+<!-- 					<div class="col-lg-3" style="background-color: #E5E5E5;">
+						<div style="padding: 35px;">
+							<a href="http://www.crea.ca/"><img src="demos/real-estate/images/crea_logo.png" style="max-width:200px; padding: 40px;"></a>
+							<a href="http://reco.on.ca/"><img src="demos/real-estate/images/reco_logo.png" style="max-width:200px; padding: 40px;"></a>
+							<a href="http://www.orea.com"><img src="demos/real-estate/images/orea_logo.png" style="max-width:200px; padding: 40px;"></a>
+							<a href="http://www.rahb.ca"><img src="demos/real-estate/images/rahb_logo.png" style="max-width:200px; padding: 40px;"></a>
+						</div>
+		
+					</div> -->
+<!-- 					<div class="col-lg-2 bgcolor">
+						<div class="col-padding">
+							<div class="quick-contact-widget dark clearfix">
+
+								<h3 class="capitalize ls1 t400">Get a Quick Quote</h3>
+
+								<div class="quick-contact-form-result"></div>
+
+								<form id="quick-contact-form" name="quick-contact-form" action="include/quickcontact.php" method="post" class="quick-contact-form nobottommargin">
+
+									<div class="form-process"></div>
+
+									<input type="text" class="required sm-form-control input-block-level not-dark" id="quick-contact-form-name" name="quick-contact-form-name" value="" placeholder="Full Name" />
+
+									<input type="email" class="required sm-form-control email input-block-level not-dark" id="quick-contact-form-email" name="quick-contact-form-email" value="" placeholder="Email Address" />
+
+									<input type="text" class="required sm-form-control input-block-level not-dark" id="quick-contact-form-phone" name="quick-contact-form-phone" value="" placeholder="Phone Number (+1-555-2221)" />
+
+									<textarea class="required sm-form-control input-block-level not-dark short-textarea" id="quick-contact-form-message" name="quick-contact-form-message" rows="5" cols="30" placeholder="What are you Looking for? (Ex: Villa on the Beach)"></textarea>
+
+									<input type="text" class="hidden" id="quick-contact-form-botcheck" name="quick-contact-form-botcheck" value="" />
+
+									<button type="submit" id="quick-contact-form-submit" name="quick-contact-form-submit" class="button button-small button-rounded button-light button-white nomargin" value="submit">Send Email</button>
+
+								</form>
+
+							</div>
+						</div>
+					</div>
+				</div> -->
+
+<!-- 				<div class="container clear-bottommargin clearfix">
+
+					<div class="col_two_third">
+
+						<div class="tabs tabs-justify tabs-tb tabs-alt nobottommargin clearfix" id="realestate-tabs" data-active="2">
+
+							<ul class="tab-nav clearfix">
+								<li><a href="#realestate-tab-1">Why Us?</a></li>
+								<li><a href="#realestate-tab-2">Properties</a></li>
+								<li><a href="#realestate-tab-3">Legal</a></li>
+							</ul>
+
+							<div class="tab-container">
+
+								<div class="tab-content clearfix" id="realestate-tab-1">
+									<p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.
+									<div class="col_one_fourth nobottommargin center">
+										<div class="counter ls1 t600" style="color: #D2D2D2;"><span data-from="100" data-to="964" data-refresh-interval="50" data-speed="2000"></span></div>
+										<h5>Floors Built</h5>
+									</div>
+
+									<div class="col_one_fourth nobottommargin center">
+										<div class="counter ls1 t600" style="color: #D2D2D2;"><span data-from="100" data-to="8514" data-refresh-interval="50" data-speed="2500"></span></div>
+										<h5>Employees</h5>
+									</div>
+
+									<div class="col_one_fourth nobottommargin center">
+										<div class="counter ls1 t600" style="color: #D2D2D2;"><span data-from="100" data-to="458" data-refresh-interval="50" data-speed="3500"></span></div>
+										<h5>Happy Clients</h5>
+									</div>
+
+									<div class="col_one_fourth nobottommargin center col_last">
+										<div class="counter ls1 t600" style="color: #D2D2D2;"><span data-from="14" data-to="159" data-refresh-interval="15" data-speed="2700"></span></div>
+										<h5>Cities Served</h5>
+									</div>
+								</div>
+								<div class="tab-content clearfix" id="realestate-tab-2">
+									<p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
+									<div class="row clearfix">
+										<div class="col-md-4">
+											<ul class="iconlist nobottommargin">
+												<li><i class="icon-ok"></i> 100% Assurance</li>
+												<li><i class="icon-ok"></i> Hard Working</li>
+												<li><i class="icon-ok"></i> Trustworthy</li>
+											</ul>
+										</div>
+										<div class="col-md-4">
+											<ul class="iconlist nobottommargin">
+												<li><i class="icon-ok"></i> Intelligent</li>
+												<li><i class="icon-ok"></i> Always Curious</li>
+												<li><i class="icon-ok"></i> Perfectionists</li>
+											</ul>
+										</div>
+										<div class="col-md-4">
+											<ul class="iconlist nobottommargin">
+												<li><i class="icon-ok"></i> Friendly &amp; Helpful</li>
+												<li><i class="icon-ok"></i> Accomodating Nature</li>
+												<li><i class="icon-ok"></i> Available 24x7</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="tab-content clearfix" id="realestate-tab-3">
+
+									<div class="clear-bottommargin-sm">
+										<div class="row clearfix">
+											<div class="col-md-7 bottommargin-sm">
+												<p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor.</p>
+												<div class="clear-bottommargin-sm">
+													<div class="row clearfix">
+														<div class="col-md-6 bottommargin-sm">
+															<address>
+																<strong>Headquarters:</strong><br>
+																795 Folsom Ave, Suite 600<br>
+																San Francisco, CA 94107<br>
+															</address>
+														</div>
+														<div class="col-md-6 bottommargin-sm">
+															<abbr title="Phone Number"><strong>Phone:</strong></abbr> (91) 8547 632521<br>
+															<abbr title="Fax"><strong>Fax:</strong></abbr> (91) 11 4752 1433<br>
+															<abbr title="Email Address"><strong>Email:</strong></abbr> info@canvas.com
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-5 bottommargin-sm">
+												<img src="https://maps.googleapis.com/maps/api/staticmap?center=-37.814107,144.963280&zoom=12&markers=-37.814107,144.963280&size=300x180" alt="Google Map" class="img-thumbnail">
+											</div>
+										</div>
+									</div>
+
+								</div>
+
+							</div>
+
+						</div>
+
+					</div>
+
+					<div class="col_one_third col_last">
+
+						<h4 class="center">Top Builders</h4>
+
+						<ul class="clients-grid grid-2 nobottommargin clearfix">
+							<li style="padding: 20px;"><a href="#" style="opacity: 0.9"><img src="demos/real-estate/images/builders/1.png" alt="Clients"></a></li>
+							<li style="padding: 20px;"><a href="#" style="opacity: 0.9"><img src="demos/real-estate/images/builders/2.png" alt="Clients"></a></li>
+							<li style="padding: 20px;"><a href="#" style="opacity: 0.9"><img src="demos/real-estate/images/builders/3.png" alt="Clients"></a></li>
+							<li style="padding: 20px;"><a href="#" style="opacity: 0.9"><img src="demos/real-estate/images/builders/4.png" alt="Clients"></a></li>
+						</ul>
+
+					</div>
+
+					<div class="clear"></div>
+
+				</div> -->
+
+			</div>
+
+		</section><!-- #content end -->
+
+		<!-- Footer
+		============================================= -->
+<!-- 		<footer id="footer" class="dark">
+
+			<div class="container"> -->
+
+				<!-- Footer Widgets
+				============================================= -->
+				<!-- <div class="footer-widgets-wrap clearfix">
+
+					<div class="col_two_fifth">
+
+						<div class="widget clearfix">
+
+							<img src="demos/real-estate/images/logo@2x_new.png" style="position: relative; opacity: 0.85; left: -10px; max-height: 80px; margin-bottom: 20px;" alt="Footer Logo">
+
+							<p>We believe in <strong>Simple</strong>, <strong>Creative</strong> &amp; <strong>Flexible</strong> Design Standards with a Retina &amp; Responsive Approach. Browse the amazing Features this template offers.</p>
+
+							<div class="line" style="margin: 30px 0;"></div>
+
+							<p class="ls1 t300" style="opacity: 0.6; font-size: 13px;">Copyrights &copy; 2017 Canvas: Real Estate</p>
+
+						</div>
+
+					</div>
+
+					<div class="col_three_fifth col_last">
+
+						<div class="col_half">
+							<h4 class="ls1 t400 uppercase">Popular Locations</h4>
+
+							<div class="row">
+								<div class="col-6 bottommargin-sm widget_links widget_real_estate_popular">
+									<ul>
+										<li><a href="#"><i class="icon-map-marker2"></i> California</a></li>
+										<li><a href="#"><i class="icon-map-marker2"></i> Nevada</a></li>
+										<li><a href="#"><i class="icon-map-marker2"></i> Hawaii</a></li>
+										<li><a href="#"><i class="icon-map-marker2"></i> Washington</a></li>
+										<li><a href="#"><i class="icon-map-marker2"></i> Ottawa</a></li>
+										<li><a href="#"><i class="icon-map-marker2"></i> Virginia</a></li>
+										<li><a href="#"><i class="icon-map-marker2"></i> Ohio</a></li>
+									</ul>
+								</div>
+
+								<div class="col-6 bottommargin-sm widget_links widget_real_estate_popular">
+									<ul>
+										<li><a href="#"><i class="icon-map-marker2"></i> Oregon</a></li>
+										<li><a href="#"><i class="icon-map-marker2"></i> Colorado</a></li>
+										<li><a href="#"><i class="icon-map-marker2"></i> Kentucky</a></li>
+										<li><a href="#"><i class="icon-map-marker2"></i> Texas</a></li>
+										<li><a href="#"><i class="icon-map-marker2"></i> Miami</a></li>
+										<li><a href="#"><i class="icon-map-marker2"></i> New York</a></li>
+										<li><a href="#"><i class="icon-map-marker2"></i> New Jersey</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<div class="col_half col_last">
+
+							<h4 class="ls1 t400 uppercase">Connect Socially</h4>
+
+							<div class="bottommargin-sm clearfix">
+								<a href="#" class="social-icon si-colored si-small si-rounded si-facebook" title="Facebook">
+									<i class="icon-facebook"></i>
+									<i class="icon-facebook"></i>
+								</a>
+
+								<a href="#" class="social-icon si-colored si-small si-rounded si-twitter" title="Twitter">
+									<i class="icon-twitter"></i>
+									<i class="icon-twitter"></i>
+								</a>
+
+								<a href="#" class="social-icon si-colored si-small si-rounded si-instagram" title="Instagram">
+									<i class="icon-instagram"></i>
+									<i class="icon-instagram"></i>
+								</a>
+
+								<a href="#" class="social-icon si-colored si-small si-rounded si-apple" title="App Store">
+									<i class="icon-apple"></i>
+									<i class="icon-apple"></i>
+								</a>
+
+								<a href="#" class="social-icon si-colored si-small si-rounded si-android" title="Play Store">
+									<i class="icon-android"></i>
+									<i class="icon-android"></i>
+								</a>
+
+								<a href="#" class="social-icon si-colored si-small si-rounded si-skype" title="Skype">
+									<i class="icon-skype"></i>
+									<i class="icon-skype"></i>
+								</a>
+							</div>
+
+							<div class="widget subscribe-widget subscribe-form clearfix" data-loader="button">
+								<div class="widget-subscribe-form-result"></div>
+								<form action="include/subscribe.php" role="form" method="post" class="nobottommargin">
+									<input type="email" id="widget-subscribe-form-email" name="widget-subscribe-form-email" class="sm-form-control not-dark required email" placeholder="Enter your Email">
+									<button class="button button-3d button-black noleftmargin norightmargin" style="margin-top: 15px;" type="submit">Subscribe</button>
+								</form>
+							</div>
+
+						</div>
+
+					</div> -->
+
+				<!-- </div> --><!-- .footer-widgets-wrap end -->
+
+			</div>
+
+		<!-- </footer> --><!-- #footer end -->
+
+	</div><!-- #wrapper end -->
+
+	<!-- Go To Top
+	============================================= -->
+	<div id="gotoTop" class="icon-angle-up"></div>
+
+	<!-- External JavaScripts
+	============================================= -->
+	<script src="js/jquery.js"></script>
+	<script src="js/plugins.min.js"></script>
+
+	<!-- Google Map JavaScripts
+	============================================= -->
+	<script src="https://maps.google.com/maps/api/js?key=AIzaSyDhGX9gcuNasMd23itobQZBC0oazC8KtNM"></script>
+	<script src="js/jquery.gmap.js"></script>
+
+	<!-- Bootstrap Select Plugin -->
+	<script src="js/components/bs-select.js"></script>
+
+	<!-- Bootstrap Switch Plugin -->
+	<script src="js/components/bs-switches.js"></script>
+
+	<!-- Range Slider Plugin -->
+	<script src="js/components/rangeslider.min.js"></script>
+
+	<!-- Footer Scripts
+	============================================= -->
+	<script src="js/functions.js"></script>
+
+	<script>
+
+		jQuery(document).ready(function(){
+
+			$(".price-range-slider").ionRangeSlider({
+				type: "double",
+				prefix: "$",
+				values: buyPrice,
+				to: buyPrice.length-6
+			});
+
+			// $(".area-range-slider").ionRangeSlider({
+			// 	type: "double",
+			// 	min: 50,
+			// 	max: 20000,
+			// 	from: 50,
+			// 	to: 20000,
+			// 	postfix: " sq ft",
+			// 	max_postfix: "+",
+			// 	disable: true
+			// });
+
+			jQuery(".bt-switch").bootstrapSwitch();
+
+		});
+
+		jQuery(window).on( 'load', function(){
+
+			// Google Map
+			jQuery('#headquarters-map').gMap({
+				address: '3060 Mainway #200, Burlington, ON L7M 1A3',
+				maptype: 'ROADMAP',
+				zoom: 16,
+				markers: [
+					{
+						address: "3060 Mainway #200, Burlington, ON L7M 1A3",
+						html: "Royal LePage Burloak Real Estate Services",
+						icon: {
+							image: "images/icons/map-icon-red.png",
+							iconsize: [32, 36],
+							iconanchor: [14,44]
+						}
+					}
+				],
+				doubleclickzoom: false,
+				controls: {
+					panControl: false,
+					zoomControl: false,
+					mapTypeControl: false,
+					scaleControl: false,
+					streetViewControl: false,
+					overviewMapControl: false
+				},
+				styles: [{"featureType":"landscape","elementType":"all","stylers":[{"color":"#2C3E50"}]}, {"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]}, ]
+			});
+
+		});
+
+	</script>
+
+	<script>
+
+		var buyPrice = [ 	0,
+							25000,
+							50000,
+							75000,
+							100000,
+							125000,
+							150000,
+							175000,
+							200000,
+							225000,
+							250000,
+							275000,
+							300000,
+							325000,
+							350000,
+							375000,
+							400000,
+							425000,
+							450000,
+							475000,
+							500000,
+							600000,
+							700000,
+							800000,
+							900000,
+							1000000,
+							2000000,
+							3000000,
+							4000000,
+							5000000,
+						   '5 000 000+'
+					];
+
+		var rentPrice = [
+							0,
+							100,
+							200,
+							300,
+							400,
+							500,
+							600,
+							700,
+							800,
+							900,
+							1000,
+							1100,
+							1200,
+							1300,
+							1400,
+							1500,
+							1600,
+							1700,
+							1800,
+							1900,
+							2000,
+							2100,
+							2200,
+							2300,
+							2400,
+							2500,
+							2600,
+							2700,
+							2800,
+							2900,
+							3000,
+							3100,
+							3200,
+							3300,
+							3400,
+							3500,
+							3600,
+							3700,
+							3800,
+							3900,
+							4000,
+							4100,
+							4200,
+							4300,
+							4400,
+							4500,
+							4600,
+							4700,
+							4800,
+							4900,
+							5000,
+							'5000+'
+					];
+
+		document.addEventListener('DOMContentLoaded',function() {
+		    document.querySelector('#rentBuySwitch').onchange=changeEventHandler;
+		},false);
+
+		function changeEventHandler(event) {
+		    var isBuy = event.target.checked;
+
+		    if (isBuy) {
+		    	//buy 
+			    $(".price-range-slider").data('ionRangeSlider').update({
+			        values: buyPrice,
+			        to: buyPrice.length-6
+			    });
+			 } else {
+			 	//rent
+			 	$(".price-range-slider").data('ionRangeSlider').update({
+			        values: rentPrice,
+			        to: rentPrice.length-6
+			    });
+
+			 }
+		}
+
+
+		$('form').submit(false); //disable default form submit;
+
+		function searchSubmit() {
+			var isBuy = document.querySelector('#rentBuySwitch').checked;
+			var priceArr = isBuy ? buyPrice : rentPrice;
+			var location = $('[data-id=locationSelect] span').text();
+			var propertyType = $('[data-id=propertySelect] span').text();
+			var beds = $('[data-id=bedsSelect] span').text();
+			var baths = $('[data-id=bathsSelect] span').text();
+			var priceMin = $(".price-range-slider").data('ionRangeSlider').result.from;
+			var priceMax = $(".price-range-slider").data('ionRangeSlider').result.to;
+
+			priceMin = encodeURIComponent( priceArr[priceMin].toString().replace(/\s/g,'') );
+			priceMax = encodeURIComponent( priceArr[priceMax].toString().replace(/\s/g,'') );
+
+			beds = encodeURIComponent(beds);
+			baths = encodeURIComponent(baths);
+
+			// priceMax = (priceMax < priceLimit) ? priceMax : encodeURIComponent(priceMax + '+');
+
+			if (propertyType == 'Any') {
+				propertyType = '';
+			} else if (propertyType == 'House') {
+				propertyType = '7';
+			} else if (propertyType == 'Condo') {
+				propertyType = '8';
+			} 
+
+			var search_str = (location != 'Waterdown') ? location + '%2C+ON%2C+Canada' : 'Waterdown%2C+Hamilton%2C+Ontario%2C+Canada';
+
+
+			var lat = '';
+			var lng = '';
+			if (location == 'Burlington') {
+				lat = '43.32551960000001';
+				lng = '-79.87448359999996';
+			} else if (location == 'Oakville') {
+				lat = '43.467517';
+				lng = '-79.68766590000001';
+			} else if (location == 'Milton') {
+				lat = '43.51829909999999';
+				lng = '-79.8774042';
+			} else if (location == 'Waterdown') {
+				lat = '43.3247102';
+				lng = '-79.9030371';
+			}
+			
+			var url = 'https://www.royallepage.ca/en/search/homes/?';
+
+			url += 'property_type=' + propertyType;
+			url += '&lat=' + lat;
+			url += '&lng=' + lng;
+			url += '&address=' + location;
+
+			var lease = isBuy ? '' : 'lease';
+			url += '&min_' + lease + 'price=' + priceMin;
+			url += '&max_' + lease + 'price=' + priceMax;
+
+			url += '&beds=' + beds;
+			url += '&baths=' + baths;
+
+
+			var transactionType = isBuy ? 'SALE' : 'LEASE';
+			url += '&transactionType=' + transactionType;
+
+			url += '&search_str=' + search_str;
+
+			url += '&includeSold=true&address_type=county&city_name=&prov_code=ON';
+
+			window.location = url;
+			// window.open(url, '_blank');
+		}
+
+	</script>
+
+
+</body>
+</html>
